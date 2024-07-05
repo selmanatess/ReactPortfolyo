@@ -1,0 +1,22 @@
+.text.sec-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0dcdc;
+    border-left: 2px solid black;
+    animation: animate 4s steps(12) infinite;
+  }
+  @keyframes animate {
+   40%,60%{
+  left: 100%;
+   }
+  
+  100%{
+  left: 0;
+  }
+  
+  }
+  

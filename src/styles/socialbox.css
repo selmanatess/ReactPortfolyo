@@ -1,0 +1,24 @@
+.social-box {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-right: 2%;
+}
+.box {
+  margin: auto;
+  margin: 5px 3px;
+  height: 75px;
+  width: 75px;
+
+  border-radius: 25px;
+  border-image: linear-gradient(to top right, #cd2855, #f6a921) 1;
+
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

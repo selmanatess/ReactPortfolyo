@@ -1,8 +1,8 @@
 import React from 'react';
 
 import './App.css';
-import Appbar from './components/Appbar';
-import HomePage from './components/HomePage';
+import Appbar from './pages/Appbar';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
