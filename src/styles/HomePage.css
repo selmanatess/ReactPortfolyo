@@ -8,15 +8,14 @@
 
 }
 .home-text {
-
   display: flex;
-  overflow: hidden;
+
 
   align-items: center;
   justify-content: center;
   width: 45%;
-  height: 100%;
-  margin-left: 5%;
+  height: 90%;
+ overflow: hidden;
 flex-direction: column;
 
 align-items: start;
@@ -39,48 +38,59 @@ color: black;
 
 .container-name {
   width: 100%;
-  overflow: hidden; /* Metnin taşıp görünmesini engellemek için */
-  white-space: nowrap;
-  /* Metni tek satırda tutmak için */
-  z-index: 8;
 
 
-  float: left;
+}
+.home-text-name::before {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 .home-text-name {
 
-  font-size: 6.1rem;
+  font-size: 5.1rem;
   font-weight: bold;
 
- 
-
+opacity: 0;
   background: linear-gradient(to right, #f6a921, #cd2855);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
-  padding-left: 100%; /* Başlangıç konumunu ekran dışında belirler */
-  animation: moveText 2s ease-in-out forwards; 
+
+
+  position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+
+
+
+  animation: moveText 2s forwards; 
+  white-space: nowrap;
   animation-delay: 0.6s;
 }
 @keyframes moveText {
   0% {
-    transform: translateX(-100%); /* Ekranın dışından başlar */
+    transform: translateX(-50%); /* Ekranın dışından başlar */
     opacity: 0; /* Başlangıçta opaklık 0 */
   }
   100% {
-    transform: translateX(-50%); /* Kendi konumuna gelir */
+    transform: translateX(0%); /* Kendi konumuna gelir */
     opacity: 1; /* Opaklık 1 olur */
   }
 }
 
-.hello {
-    font-size: 40px;
+.hello {  font-size: 40px;
   font-weight: bold;
   color: #ec4f1f;
 
   position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
   opacity: 0; /* Başlangıçta görünmez */
   animation: moveDown 2s forwards; 
+  
 }
 @keyframes moveDown {
   0% {
@@ -93,19 +103,33 @@ color: black;
   }
 }
 
+@keyframes moveUp {
+  0% {
+    transform: translateY(+50px); /* Yukarıdan başlar */
+    opacity: 0; /* Başlangıçta opaklık 0 */
+  }
+  100% {
+    transform: translateY(0); /* Kendi konumuna gelir */
+    opacity: 1; /* Opaklık 1 olur */
+  }
+}
+
 .resume-button {
 
   border: none;
   outline: none;
+  padding: 15px 25px;
   position: relative;
   z-index: 1;
   border-radius: 5px;
- width: 100%;
-color: #ec4f1f;
+ width: 250px;
+ height: 60px;
+   color: #ec4f1f;
   font-size: 19px;
   background: linear-gradient(to right, #f6a921, #cd2855);
   position: relative;
   cursor: pointer;
+  white-space: nowrap;
   
 }
 
@@ -148,6 +172,136 @@ color: #ec4f1f;
   color: white;
 }
 
+
+
+
+
+
+@media screen and (max-width: 1073px){
+  .my-photos {
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+   
+   margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .homepage{
+    flex-direction: column;
+
+    width: 100%;
+   
+
+  }
+  .resume-button::before {
+    content: "";
+   
+     position: absolute;
+   
+     left: 3px;
+     right: 3px;
+     top: 3px;
+     bottom: 3px;
+     border-radius: 4px;
+     background-color: #f0dbe0;
+     z-index: -1;
+     transition: 200ms
+   }
+  .home-text {
+    display: flex;
+ width: 100%;
+ padding: 20px;
+ 
+ justify-content: center;
+    padding-bottom: 80px;
+
+    background-color:transparent;
+
+    
+  flex-direction: column;
+  
+  align-items: start;
+  }
+  .resume-button {
+
+margin-bottom: 20px;
+    
+  }
+  .container {
+    margin: 0px 0 20px 10px;
+    position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+  opacity: 0; /* Başlangıçta görünmez */
+  animation: moveUp 2s forwards; 
+  }
+  .container .text {
+
+    position: relative;
+    font-size: 25px;
+  
+  }
+  .container .text.first-text {
+    font-weight: bold;
+  color: black;
+  }
+  
+  .container-name {
+    width: 100%;
+  }
+  .home-text-name::before { 
+    position: absolute;
+    width: 100%;
+    height: 100%; z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .home-text-name { 
+     font-size: 3.1rem;
+    font-weight: bold;
+
+    margin: 20px 0 10px 0;
+    opacity: 0;
+    background: linear-gradient(to right, #f6a921, #cd2855);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+    animation: moveText 2s forwards; 
+    white-space: nowrap;
+    animation-delay: 0.6s;
+  }
+  .home-text-content{
+    position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+  opacity: 0; /* Başlangıçta görünmez */
+  animation: moveUp 2s forwards; 
+  animation-delay: 0.6s;
+  }
+  
+  .hello {  font-size: 21px;
+    font-weight: bold;
+    color: #ec4f1f;
+    margin: 25% 0 0 0;
+    
+    position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+    opacity: 0; /* Başlangıçta görünmez */
+    animation: moveDown 2s forwards; 
+    
+  }
+  .button-div{
+   
+   width: 30%;
+    display: flex;
+    height: 7%;
+  
+    margin: 10px 0 20px 10px;
+   
+  }
+
+ 
+  
+}
+
 /* .resume-button {
   display: flex;
   align-items: center;
@@ -166,24 +320,9 @@ position: relative;
 } */
 
 .button-div{
-  margin-top: 14%;
+  margin-top: 10%;
  width: 25%;
   display: flex;
   height: 7%;
-
-
  
-}
-.my-photos {
-  width: 50%;
-  height: 100%;
-  margin-right: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.my-photos img {
-  width: 50%;
-
-  border-radius: 50%;
 }
