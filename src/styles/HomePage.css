@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 91vh;
+
   width: 100%;
 }
 .home-text {
@@ -19,6 +19,7 @@
   align-items: start;
   font-size: 20px;
   padding: 40px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -195,6 +196,7 @@
 
     justify-content: start;
     width: 100%;
+    height: auto;
   }
   .button-div {
     margin-top: 10%;
