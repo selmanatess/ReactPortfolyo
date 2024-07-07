@@ -5,44 +5,44 @@
   justify-content: space-between;
   height: 91vh;
   width: 100%;
-
 }
 .home-text {
   display: flex;
 
-
-  align-items: center;
   justify-content: center;
-  width: 45%;
+  width: 50%;
   height: 90%;
- overflow: hidden;
-flex-direction: column;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: transparent;
 
-align-items: start;
+  align-items: start;
   font-size: 20px;
   padding: 40px;
 }
 
 .container {
+  margin: 0px 0 20px 10px;
+  position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+  opacity: 0; /* Başlangıçta görünmez */
+  animation: moveUp 2s forwards;
+  white-space: nowrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .container .text {
-
   position: relative;
-  font-size: 40px;
-
+  font-size: 36px;
 }
 .container .text.first-text {
   font-weight: bold;
-color: black;
+  color: black;
 }
 
 .container-name {
   width: 100%;
-
-
 }
 .home-text-name::before {
-
   position: absolute;
   width: 100%;
   height: 100%;
@@ -54,21 +54,18 @@ color: black;
   transition: 0.5s;
 }
 .home-text-name {
-
   font-size: 5.1rem;
   font-weight: bold;
-
-opacity: 0;
+  min-width: 482px;
+  opacity: 0;
   background: linear-gradient(to right, #f6a921, #cd2855);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  margin-bottom: 40px;
 
   position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
 
-
-
-  animation: moveText 2s forwards; 
+  animation: moveText 2s forwards;
   white-space: nowrap;
   animation-delay: 0.6s;
 }
@@ -83,14 +80,15 @@ opacity: 0;
   }
 }
 
-.hello {  font-size: 40px;
+.hello {
+  font-size: 40px;
   font-weight: bold;
   color: #ec4f1f;
 
   position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
   opacity: 0; /* Başlangıçta görünmez */
-  animation: moveDown 2s forwards; 
-  
+  animation: moveDown 2s forwards;
+  margin-bottom: 40px;
 }
 @keyframes moveDown {
   0% {
@@ -113,31 +111,41 @@ opacity: 0;
     opacity: 1; /* Opaklık 1 olur */
   }
 }
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .resume-button {
-
   border: none;
   outline: none;
   padding: 15px 25px;
   position: relative;
   z-index: 1;
   border-radius: 5px;
- width: 250px;
- height: 60px;
-   color: #ec4f1f;
+  width: 250px;
+  height: 60px;
+  color: #ec4f1f;
   font-size: 19px;
   background: linear-gradient(to right, #f6a921, #cd2855);
   position: relative;
   cursor: pointer;
   white-space: nowrap;
-  
+  opacity: 0; /* Başlangıçta görünmez */
+  animation: moveUp 2s forwards;
+  margin-bottom: 20px;
+  animation-delay: 1s;
 }
 
 .resume-button:hover {
   color: white;
 }
 .resume-button::before {
- content: "";
+  content: "";
 
   position: absolute;
 
@@ -148,16 +156,14 @@ opacity: 0;
   border-radius: 4px;
   background-color: #c4e1df;
   z-index: -1;
-  transition: 200ms
+  transition: 200ms;
 }
 .resume-button::after {
- 
-
   font-size: 16px;
-  background: linear-gradient(to left, #00FFA3, #DC1FFF);
+  background: linear-gradient(to left, #00ffa3, #dc1fff);
   -webkit-background-clip: text;
-  color:white;
-  transition: 200ms
+  color: white;
+  transition: 200ms;
 }
 .resume-button:hover::before {
   opacity: 10%;
@@ -165,164 +171,208 @@ opacity: 0;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  
+
   color: white;
 }
-.resume-button:hover::after{
+.resume-button:hover::after {
   color: white;
 }
 
+.home-text-content {
+  position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+  opacity: 0; /* Başlangıçta görünmez */
+  animation: moveUp 2s forwards;
+  animation-delay: 0.6s;
+  font-size: 18px;
+}
 
-
-
-
-
-@media screen and (max-width: 1073px){
-  .my-photos {
-    display: flex;
-    background-color: transparent;
-    width: 100%;
-   
-   margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 1073px) {
+  .my-photos-div {
+    display: none;
   }
-  .homepage{
+  .homepage {
     flex-direction: column;
 
+    justify-content: start;
     width: 100%;
-   
-
+  }
+  .button-div {
+    margin-top: 10%;
+    width: 8%;
+    display: flex;
+    height: 3%;
   }
   .resume-button::before {
     content: "";
-   
-     position: absolute;
-   
-     left: 3px;
-     right: 3px;
-     top: 3px;
-     bottom: 3px;
-     border-radius: 4px;
-     background-color: #f0dbe0;
-     z-index: -1;
-     transition: 200ms
-   }
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    border-radius: 4px;
+    background-color: #f0dbe0;
+    z-index: -1;
+    transition: 200ms;
+  }
   .home-text {
     display: flex;
- width: 100%;
- padding: 20px;
- 
- justify-content: center;
-    padding-bottom: 80px;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px 0 20px;
 
-    background-color:transparent;
+    justify-content: start;
 
-    
-  flex-direction: column;
-  
-  align-items: start;
+    background-color: transparent;
+
+    flex-direction: column;
+
+    align-items: start;
   }
   .resume-button {
-
-margin-bottom: 20px;
-    
-  }
-  .container {
-    margin: 0px 0 20px 10px;
     position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
-  opacity: 0; /* Başlangıçta görünmez */
-  animation: moveUp 2s forwards; 
-  }
-  .container .text {
 
+    width: 125px;
+    height: 50px;
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+
+  .container .text {
     position: relative;
     font-size: 25px;
-  
   }
   .container .text.first-text {
     font-weight: bold;
-  color: black;
+    color: black;
   }
-  
+
   .container-name {
     width: 100%;
   }
-  .home-text-name::before { 
+  .home-text-name::before {
     position: absolute;
     width: 100%;
-    height: 100%; z-index: -1;
+    height: 100%;
+    z-index: -1;
     top: 0;
     left: 0;
     border-radius: 5px;
     transition: 0.5s;
   }
-  .home-text-name { 
-     font-size: 3.1rem;
+  .home-text-name {
+    font-size: 3.1rem;
     font-weight: bold;
 
     margin: 20px 0 10px 0;
     opacity: 0;
     background: linear-gradient(to right, #f6a921, #cd2855);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
-    animation: moveText 2s forwards; 
-    white-space: nowrap;
-    animation-delay: 0.6s;
-  }
-  .home-text-content{
+    -webkit-text-fill-color: transparent;
     position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
-  opacity: 0; /* Başlangıçta görünmez */
-  animation: moveUp 2s forwards; 
-  animation-delay: 0.6s;
+    animation: moveText 2s forwards;
+    white-space: nowrap;
+    animation-delay: 0.8s;
   }
-  
-  .hello {  font-size: 21px;
+
+  .hello {
+    font-size: 21px;
     font-weight: bold;
     color: #ec4f1f;
-    margin: 25% 0 0 0;
-    
+    margin: 10px 0 0 0;
+
     position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
     opacity: 0; /* Başlangıçta görünmez */
-    animation: moveDown 2s forwards; 
-    
+    animation: moveDown 2s forwards;
   }
-  .button-div{
-   
-   width: 30%;
+  .button-div {
+    width: 30%;
     display: flex;
     height: 7%;
-  
+
     margin: 10px 0 20px 10px;
-   
   }
 
- 
+  .my-photos-div {
+    display: none !important;
+  }
+  .sm-my-photos-div{
+    width: 100%;
+    background-color: transparent;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    max-width: 391px;
+  }
+  .sm-my-photos{
+    position: relative;
+    display: flex;
+    width: 90%;
+    aspect-ratio: 1;
+    border-radius: 80%;
+    opacity: 0;
+    align-items: flex-end;
+    justify-content: center;
   
+    background: linear-gradient(#f8d4da, #d7dae0) padding-box,
+      linear-gradient(45deg, #f4a622, #cd2954) border-box;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 40px #e87434;
+    animation: moveUp 2s forwards;
+    animation-delay: 0.8s;
+ 
+  }
+  .myphoto{
+    border-radius: 50% !important;
+    opacity: 0;
+    width: 100%;
+  height: 100%;
+  
+    border-radius: 50%;
+    animation: opacity 2s forwards;
+    animation-delay: 1.3s;
+  }
+
+
 }
 
-/* .resume-button {
+.button-div {
+  margin-top: 10%;
+  width: 25%;
+  display: flex;
+  height: 7%;
+}
+.my-photos-div {
+  width: 43%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-position: relative;
-
-  z-index: 2;
-  background-color: black;
-  font-size: 25px;
-  font-family: "Crimson Text", serif;
-  background: linear-gradient(to right, #f6a921, #cd2855);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  padding: 13px;
-} */
-
-.button-div{
-  margin-top: 10%;
- width: 25%;
+}
+.my-photos {
+  position: relative;
   display: flex;
-  height: 7%;
- 
+  width: 60%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  opacity: 0;
+
+  background: linear-gradient(#f8d4da, #d7dae0) padding-box,
+    linear-gradient(45deg, #f4a622, #cd2954) border-box;
+  border: 5px solid transparent;
+  box-shadow: 0px 0px 40px #e87434;
+  animation: moveUp 2s forwards;
+  animation-delay: 0.8s;
+}
+.sm-my-photos-div{
+  display: none;
+
+}
+.my-photos img {
+  opacity: 0;
+  width: 100%;
+
+
+  border-radius: 50%;
+  animation: opacity 2s forwards;
+  animation-delay: 1.3s;
 }

@@ -33,9 +33,21 @@ export default function HomePage() {
         </div>
        
       </div>
-      <div className='my-photos'>
-        <img src={myphoto} alt="myphoto" />
+
+
+      <div className='my-photos-div'>
+        <div className='my-photos'>
+        <img src={myphoto} alt='myphoto' className='myphoto'></img>
+      </div> 
       </div>
+      <div className='sm-my-photos-div'>
+        <div className='sm-my-photos'>
+        <img src={myphoto} alt='Selman ATEŞ' className='myphoto'></img>
+      </div> 
+      </div>
+       
+      
+      
 
 
       <SocialBox />
