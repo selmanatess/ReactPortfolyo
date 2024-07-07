@@ -4,6 +4,9 @@
   align-items: space-between;
   margin-right: 2%;
   background-color: transparent;
+  opacity: 0;
+    animation: moveUp 1s ease-in-out 0.5s forwards;
+    animation-delay: 1,8s;
 }
 .box {
   margin: auto;
@@ -25,10 +28,30 @@
 }
 
 @media screen and (max-width: 1073px) {
+
   .social-box {
-    display: none;
-   
+
+margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin-right: 2%;
+    background-color: transparent;
+    opacity: 0;
+    animation: moveUp 1s ease-in-out 0.5s forwards;
+    animation-delay: 1,8s;
   }
   
-  
+}
+
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(+50px); /* Yukarıdan başlar */
+    opacity: 0; /* Başlangıçta opaklık 0 */
+  }
+  100% {
+    transform: translateY(0); /* Kendi konumuna gelir */
+    opacity: 1; /* Opaklık 1 olur */
+  }
 }

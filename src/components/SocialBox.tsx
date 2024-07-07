@@ -26,7 +26,7 @@ const githubClick = () => {
         <div className='box' onClick={githubClick}><IconSquareGithub style={{width: '55px', height: '55px' }}></IconSquareGithub></div>
         <div className='box' onClick={mailClick}>
 
-        <IconMail style={{ width: '55px', height: '55px' }} />
+        <IconMail style={{ width: '65px', height: '65px' }} />
         </div>
       
     </div>

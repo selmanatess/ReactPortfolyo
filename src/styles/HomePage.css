@@ -306,7 +306,7 @@
   .sm-my-photos{
     position: relative;
     display: flex;
-    width: 90%;
+    width: 65%;
     aspect-ratio: 1;
     border-radius: 80%;
     opacity: 0;
