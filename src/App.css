@@ -5,10 +5,21 @@ body{
   background-size: cover;
   background-image: url("assets/background.png");
   width: 100%;
+
+
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family:"Lato", sans-serif;
+}
+/* Tüm kaydırma çubuklarını gizler */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }

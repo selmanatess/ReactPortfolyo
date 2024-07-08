@@ -9,7 +9,9 @@ export default function HomePage() {
 
 
   return (
-    <div className='homepage'>
+   <div>
+    <div className='appbar-div'></div>
+     <div className='homepage'>
       <div className='home-text'>
         <div className='header'>
           <div className='hello'>
@@ -53,5 +55,7 @@ export default function HomePage() {
       <SocialBox />
 
     </div>
+   </div>
+   
   )
 }
