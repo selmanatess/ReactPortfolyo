@@ -9,7 +9,7 @@ const mailClick = () => {
     window.location.href = 'mailto:selmanates007@gmail.com';
 }
 const linkedinClick = () => {
-    window.open('https://www.linkedin.com/in/selman-ate%C5%9F-7b1b3b1b4/', '_blank');
+    window.open('https://www.linkedin.com/in/selman-ate%C5%9F-640ab21b7', '_blank');
 }
 const instagramClick = () => {
     window.open('https://www.instagram.com/selmann_ates/', '_blank');

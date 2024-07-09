@@ -196,4 +196,9 @@ align-items: center;
         filter: blur(12px);
         animation: blob-bounce 5s infinite ease;
       }
+      .services h1{
+        font-size: 1.5rem;
+   
+      
+      }
   }
