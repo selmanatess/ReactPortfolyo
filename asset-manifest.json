@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/ReactPortfolyo/static/css/main.de155d25.css",
-    "main.js": "/ReactPortfolyo/static/js/main.414cb9fa.js",
+    "main.css": "/ReactPortfolyo/static/css/main.aeaafda5.css",
+    "main.js": "/ReactPortfolyo/static/js/main.95baa05e.js",
     "static/js/453.7b2bb078.chunk.js": "/ReactPortfolyo/static/js/453.7b2bb078.chunk.js",
+    "static/media/vetgpt.png": "/ReactPortfolyo/static/media/vetgpt.263eb1b3563bc970beb9.png",
+    "static/media/guctekmakina.png": "/ReactPortfolyo/static/media/guctekmakina.03d5c272173f410c2c6c.png",
     "static/media/background.png": "/ReactPortfolyo/static/media/background.06ea6ab4be87284f05d2.png",
     "static/media/react.png": "/ReactPortfolyo/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/nodejs.png": "/ReactPortfolyo/static/media/nodejs.d980d9636ace07ad3dde.png",
@@ -11,12 +13,12 @@
     "static/media/javascript.png": "/ReactPortfolyo/static/media/javascript.5c3da1cc7cdb2fd69ff6.png",
     "static/media/firebase.png": "/ReactPortfolyo/static/media/firebase.8584a25cb878e376b81d.png",
     "index.html": "/ReactPortfolyo/index.html",
-    "main.de155d25.css.map": "/ReactPortfolyo/static/css/main.de155d25.css.map",
-    "main.414cb9fa.js.map": "/ReactPortfolyo/static/js/main.414cb9fa.js.map",
+    "main.aeaafda5.css.map": "/ReactPortfolyo/static/css/main.aeaafda5.css.map",
+    "main.95baa05e.js.map": "/ReactPortfolyo/static/js/main.95baa05e.js.map",
     "453.7b2bb078.chunk.js.map": "/ReactPortfolyo/static/js/453.7b2bb078.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de155d25.css",
-    "static/js/main.414cb9fa.js"
+    "static/css/main.aeaafda5.css",
+    "static/js/main.95baa05e.js"
   ]
 }
