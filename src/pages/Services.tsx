@@ -20,7 +20,6 @@ export default function Services() {
         <Card title='Git ve Github Kullanımı ' description='React, TypeScript, JavaScript, HTML, CSS, SCSS, Bootstrap, Material-UI, Firebase, Git ve Github gibi teknolojileri kullanarak Front-End Developer olarak çalışmaktayım.' icon={github} />
         <Card title='Express' description='React, TypeScript, JavaScript, HTML, CSS, SCSS, Bootstrap, Material-UI, Firebase, Git ve Github gibi teknolojileri kullanarak Front-End Developer olarak çalışmaktayım.' icon={express} />
         <Card title='Firebase' description='React, TypeScript, JavaScript, HTML, CSS, SCSS, Bootstrap, Material-UI, Firebase, Git ve Github gibi teknolojileri kullanarak Front-End Developer olarak çalışmaktayım.' icon={firebase} />
-     
         <Card title='Javascript' description='React, TypeScript, JavaScript, HTML, CSS, SCSS, Bootstrap, Material-UI, Firebase, Git ve Github gibi teknolojileri kullanarak Front-End Developer olarak çalışmaktayım.' icon={javascript} />
         <Card title='Postgresql' description='React, TypeScript, JavaScript, HTML, CSS, SCSS, Bootstrap, Material-UI, Firebase, Git ve Github gibi teknolojileri kullanarak Front-End Developer olarak çalışmaktayım.' icon={postgresql} />
       </div>

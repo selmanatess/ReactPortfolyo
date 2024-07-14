@@ -381,8 +381,8 @@ height: 9vh;
   opacity: 0;
   width: 100%;
 
-
+animation: moveUp 2s forwards;
+animation-delay: 1.3s;
   border-radius: 50%;
-  animation: opacity 2s forwards;
-  animation-delay: 1.3s;
+
 }
