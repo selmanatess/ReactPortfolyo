@@ -65,7 +65,7 @@ height: 9vh;
 .home-text-name {
   font-size: 5.1rem;
   font-weight: bold;
-  min-width: 482px;
+  min-width: 300px;
   opacity: 0;
   background: linear-gradient(to right, #f6a921, #cd2855);
   -webkit-background-clip: text;
@@ -272,12 +272,13 @@ height: 9vh;
   .home-text-name {
     font-size: 3.1rem;
     font-weight: bold;
-
-    margin: 20px 0 10px 0;
+max-width: 500px;
+    margin: 0;
     opacity: 0;
-    background: linear-gradient(to right, #f6a921, #cd2855);
+    background-color: red !important;
+    /* background: linear-gradient(to right, #f6a921, #cd2855);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
     animation: moveText 2s forwards;
     white-space: nowrap;
