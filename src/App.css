@@ -23,3 +23,21 @@ html {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
 }
+.body {
+  scroll-behavior: smooth;
+}
+
+body, html, #root, .body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: red;
+  transform-origin: 0%;
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import '../styles/Appbar.css'
 import Sidebar from '../components/Sidebar';
 import { TbMenuDeep } from "react-icons/tb";
+import {motion} from 'framer-motion'
 export default function Appbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);

@@ -5,7 +5,7 @@ export function IconMail(props: React.SVGProps<SVGSVGElement>) {
     <svg
     viewBox="0 0 512 512"
     height="0.8em"
-    width="0,8em"
+    width="0.8em"
     {...props}
   >
     <defs>
