@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactPortfolyo/static/css/main.ebb51776.css",
-    "main.js": "/ReactPortfolyo/static/js/main.4bcbf029.js",
+    "main.css": "/ReactPortfolyo/static/css/main.9770d481.css",
+    "main.js": "/ReactPortfolyo/static/js/main.bab0857e.js",
     "static/js/453.7b2bb078.chunk.js": "/ReactPortfolyo/static/js/453.7b2bb078.chunk.js",
     "static/media/vetgpt.png": "/ReactPortfolyo/static/media/vetgpt.263eb1b3563bc970beb9.png",
     "static/media/map.png": "/ReactPortfolyo/static/media/map.f13af6e674fef97e6b79.png",
@@ -14,12 +14,12 @@
     "static/media/javascript.png": "/ReactPortfolyo/static/media/javascript.5c3da1cc7cdb2fd69ff6.png",
     "static/media/firebase.png": "/ReactPortfolyo/static/media/firebase.8584a25cb878e376b81d.png",
     "index.html": "/ReactPortfolyo/index.html",
-    "main.ebb51776.css.map": "/ReactPortfolyo/static/css/main.ebb51776.css.map",
-    "main.4bcbf029.js.map": "/ReactPortfolyo/static/js/main.4bcbf029.js.map",
+    "main.9770d481.css.map": "/ReactPortfolyo/static/css/main.9770d481.css.map",
+    "main.bab0857e.js.map": "/ReactPortfolyo/static/js/main.bab0857e.js.map",
     "453.7b2bb078.chunk.js.map": "/ReactPortfolyo/static/js/453.7b2bb078.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebb51776.css",
-    "static/js/main.4bcbf029.js"
+    "static/css/main.9770d481.css",
+    "static/js/main.bab0857e.js"
   ]
 }

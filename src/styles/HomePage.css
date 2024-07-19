@@ -381,6 +381,7 @@ max-width: 500px;
 .my-photos img {
   opacity: 0;
   width: 100%;
+  aspect-ratio: 3/4;
 
 animation: moveUp 2s forwards;
 animation-delay: 1.3s;

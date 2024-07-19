@@ -25,6 +25,7 @@ align-items: center;
   gap: 30px;
   margin:25px 20px;
   width: 100%;
+
   
 }
 
@@ -116,8 +117,31 @@ align-items: center;
       transform: translate(-100%, -100%) translate3d(0, 0, 0);
     }
   }
+  .services-title{
+      width: 90%;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+
+    position: relative; /* Animasyonun pozisyonunu ayarlamak için gerekli */
+    opacity: 0; /* Başlangıçta görünmez */
+    animation: moveDown 2s forwards;
+    margin-bottom: 10px;
+  }
 
   @media screen and (max-width: 500px) {
+
+    .services h1{
+      font-size: 1.5rem;
+      margin: 2rem 0;
+      background: linear-gradient(to right, #f6a921, #cd2855);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 2px;
+      font-size: 45px;
+      font-weight: 400;
+    }
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -125,7 +149,8 @@ align-items: center;
       gap: 10px;
       margin:25px 20px;
       width: 100%;
-   
+     
+
       
     }
     

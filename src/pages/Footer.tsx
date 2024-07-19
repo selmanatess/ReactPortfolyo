@@ -3,15 +3,13 @@ import '../styles/footer.css'
 import logo from '../assets/logo.png'
 import { FaLinkedinIn } from "react-icons/fa6";
 import { TbBrandGithubFilled } from "react-icons/tb";
-import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaInstagram, } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
 
 export default function Footer() {
-  const mailClick = () => {
-    window.location.href = 'mailto:selmanates007@gmail.com';
-  }
+
   const linkedinClick = () => {
     window.open('https://www.linkedin.com/in/selman-ate%C5%9F-640ab21b7', '_blank');
   }
@@ -23,10 +21,10 @@ export default function Footer() {
   }
 
   const twitterClick = () => {
-    window.open('https://github.com/selmanatess', '_blank');
+    window.open('https://x.com/SellmanAtesss', '_blank');
   }
   const facebookClick = () => {
-    window.open('', '_blank');
+    window.open('https://www.facebook.com/selman.ates.18?locale=tr_TR', '_blank');
   }
   const MediumClick = () => {
     window.open('https://medium.com/@selmanates007', '_blank');

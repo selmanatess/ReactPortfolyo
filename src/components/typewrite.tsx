@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/typewrite.css'; // CSS dosyasını ekleyebilirsiniz
 
 const Typewriter = () => {
-  const texts = ["Bilgisayar Mühendisi", "React Geliştirici", "Node.js Geliştirici",];
+  const texts = ["Bilgisayar Mühendisiyim", "React Geliştiriciyim", "Node.js Geliştiriciyim",];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   useEffect(() => {
